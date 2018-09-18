@@ -31,6 +31,7 @@ html, html a, body {
 }
 
 body {
+  position: relative;
   font-family: Hind, sans-serif;
 }
 
@@ -1249,17 +1250,17 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 /*------------------------------------------------------------------
     [Parallax Content]
 ------------------------------------------------------------------*/
 .parallax-content {
-  padding-top: 220px;
+  
   background: url(../img/request.jpg) ;
-  padding-bottom: 120px;
+ 
 }
 
 /*------------------------------------------------------------------
