@@ -29,64 +29,56 @@
     <!-- BODY -->
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
+  	<nav class="navbar role="navigation" sticky-top navbar-light">
+  		<div class="container">
+  			<div class="menu-container">
+  				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-collapse" aria-controls=".nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+     			 <span class="toggle-icon"></span>
+    			</button>
 
-                        <!-- Logo -->
-                        <div class="navbar-brand logo">
-                            <a class="logo-wrap" href="index.html">
-                                <img class="logo-img logo-img-main" src="img/Logo.jpg" alt="PFL Logo">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
+    			 <a class="navbar-brand logo-img" href="index.html">
+			  		<img src="C:\Users\mofokengt\Desktop\pfl\PFL\img\Logo.jpg"  width="50" height="50">
+			  	</a>
+			</div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="navbar-nav navbar-nav-right">
-                                <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover active" href="#index">Home</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#media">Media</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#prayer">Prayer Requests</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#services">Services</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#about">About</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
-
-        <div class="container-fluid">
-        	<!--========== SLIDER ==========-->
-	        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	            <!-- Wrapper for slides -->
-	            <div class="carousel-inner" role="listbox">
-	                <div class="item active">
-	                    <img class="img-responsive" src="img/1920x1080/image2.jpg" alt="Slider Image">
-	                </div>
-	                <div class="item">
-	                    <img class="img-responsive" src="img/1920x1080/image4.jpg" alt="Slider Image">
-	                </div>
-	                <div class="item">
-	                    <img class="img-responsive" src="img/image1.jpg" alt="Slider Image">
-	                </div>
+			<div class="collapse navbar-collapse nav-collapse">
+	            <div class="menu-container">
+	                <ul class="navbar-nav navbar-nav-right">
+	                    <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover active" href="#index">Home</a></li>
+	                    <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#media">Media</a></li>
+	                    <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#prayer">Prayer Requests</a></li>
+	                    <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#services">Services</a></li>
+	                    <li class="nav-item"><a class="nav-item-child nav-link nav-item-hover" href="#about">About</a></li>
+	                </ul>
 	            </div>
-	        </div>
-	        <!--========== SLIDER ==========-->
-        </div>
+		 	</div>
+  	</div>
+</nav>
+
+
+	<div class="object-row container-fluid">
+	<div class="row">
+		<div class="col-12">
+			 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="img-responsive" src="img/1920x1080/image2.jpg" alt="Slider Image">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="img/1920x1080/image4.jpg" alt="Slider Image">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="img/image1.jpg" alt="Slider Image">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>         
+	</div>
+
+
+
 
        <div class="object-row container">
         <div id="services"">
@@ -250,7 +242,7 @@
                 	<div class="col-sm-6 sm-margin-b-2">
                         <div class="service">
                         	<h3>Our Target Market</h3>
-							<ul>
+							<ul style="display: inline-grid;">
 	                			<li><p class="margin-b-5">THE COMMUNITY - uncommitted</p></li>
 	                			<li><p class="margin-b-5">THE CROWD – committed to attending</p></li>
 	                			<li><p class="margin-b-5">THE CONGREGATION - committed to membership</p></li>
@@ -258,7 +250,7 @@
 	                			<li><p class="margin-b-5">THE CORE – committed to ministry and mission</p></li>
 	                		</ul>
                         	<h3>Our Strategy</h3>
-							<ul>
+							<ul style="display: inline-grid;">
 	                			<li><p class="margin-b-5">Bring them in</p></li>
 	                			<li><p class="margin-b-5">Build them up</p></li>
 	                			<li><p class="margin-b-5">Train them for</p></li>
@@ -277,7 +269,7 @@
         						</li>
         						<li>
         							<h5>This LIFESTYLE has 4 key components</h5>
-	                				<ul>
+	                				<ul style="display: inline-grid;">
 	                					<li><p class="margin-b-5">Every believer is a member of Christ’s Body.  (Rom. 12:5)</p></li>
 	                					<li><p class="margin-b-5">Every believer needs maturity.  (Eph. 4:13)</p></li>
 	                					<li><p class="margin-b-5">Every believer is a minister. (Eph. 4:12)</p></li>
@@ -286,7 +278,7 @@
         						</li>
         						<li>
         							<h5>These components meet four basic life needs</h5>
-	                				<ul>
+	                				<ul style="display: inline-grid;">
 	                					<li><p class="margin-b-5">People to live with</p></li>
 	                					<li><p class="margin-b-5">Principles to live by</p></li>
 	                					<li><p class="margin-b-5">A profession to live on</p></li>
