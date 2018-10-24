@@ -287,14 +287,14 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Pricing]
 ------------------------------------------------------------------*/
-.pricing {
+.object-row {
   padding: 70px 45px;
   background: #fff;
   margin-top: 50px;
 }
 
 @media (max-width: 768px) {
-  .pricing {
+  .object-row {
     margin-top: 0;
   }
 }
