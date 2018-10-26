@@ -50,7 +50,6 @@ em, li, li a {
     color: #000;
     list-style: none;
     display: inline-block;
-    padding: 15px;
 }
 
 a {
@@ -517,271 +516,34 @@ fieldset[disabled] .btn-theme {
   	[Header]
 ------------------------------------------------------------------*/
 /* Fixed Top */
-.navbar-fixed-top .navbar-collapse {
-  max-height: 100%;
-}
-
-/* Navbar */
-.container .navbar {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Navbar Toggle */
-.container .navbar-brand .navbar-toggle {
-  width: 100%;
-  height: 25px;
-  border: none;
-  padding: 0;
-  margin: 35px 0;
-}
-
-.navbar .menu-container .navbar-toggle .toggle-icon 
+.sticky
 {
-  position: relative;
-  width: 21px;
-  height: 14px;
-  display: inline-block;
-  background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+  position: fixed;
+  width: 100%;
+}
+.navbar
+{
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar-fixed-top .navbar-collapse {
+  max-height: 100px;
+  margin: 5px;
 }
 
-.navbar-brand .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
-  position: absolute;
-  left: 0;
-  background: #515769;
-  content: " ";
+.navbar-brand {
+  height: 80px;
 }
-
-.container .navbar-toggle .toggle-icon:before {
-  width: 10px;
-  height: 1px;
-  bottom: 10px;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  transform: rotate(0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.navbar-brand>img {
+  height: 80px;
+  overflow: hidden;
+  padding: 15px;
+  width: 80px;
 }
-
-.navbar .navbar-toggle .toggle-icon:after {
-  width: 16px;
-  height: 1px;
-  top: -5px;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  transform: rotate(0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
 }
-
-.navbar .navbar-toggle:hover .toggle-icon {
-  background: #17bed2;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.navbar .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
-  width: 21px;
-  height: 1px;
-  background: #17bed2;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.navbar .navbar-toggle:hover .toggle-icon.is-clicked {
-  background: rgba(81, 87, 105, 0);
-}
-
-/* Navbar Logo */
-.navbar .navbar-brand .logo {
-  width: 100px;
-  height: 100px;
-  float: left;
-  max-height: 95px;
-  line-height: 65px;
-}
-
-.navbar .navbar-brand .logo-wrap {
-  display: inline-block;
-  padding: 15px 0;
-}
-
-.navbar .navbar-brand .logo-img {
-  display: inline-block;
-  width: 85px;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-}
-
-
-.navbar .navbar-brand .logo-img-active {
-  display: none;
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-/* Navbar */
-.navbar .navbar-brand .nav-item .navbar-nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-/* Nav */
-.navbar .navbar-brand .nav-item {
-  position: relative;
-  display: block;
-}
-
-.navbar .navbar-brand .nav-item:last-child .nav-item-child {
-  padding-right: 0;
-}
-
-
-.navbar .navbar-brand .nav-item-child {
-  position: relative;
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  font-family: Hind, sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 55px;
-  padding: 20px;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.navbar .navbar-brand .nav-item-hover {
-  position: relative;
-}
-
-
-/* Media Queries below 991px */
-@media (max-width: 991px) {
-  /* Bootstrap collapse of navigation with a maximum width: 991px
-    (Change it to any breakpoint you want to be collapsed) */
-  .navbar {
-    background: currentColor;
-  }
-  .navbar .navbar-toggle {
-    display: inline-block;
-  }
-  .navbar .navbar-collapse.collapse {
-    display: none !important;
-  }
-  .navbar .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-  .navbar .nav-collapse {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .navbar .navbar-nav {
-    margin: 0;
-    float: none;
-  }
-  .navbar .navbar-nav .nav-item {
-    float: none;
-  }
-  /* Menu Container */
-  .navbar .menu-container:before, .header .menu-container:after {
-    content: " ";
-    display: table;
-  }
-  .navbar .menu-container:after {
-    clear: both;
-  }
-  /* Logo */
-  .navbar .logo .logo-img-main {
-    display: none;
-  }
-  .navbar .logo .logo-img-active {
-    display: inline-block;
-  }
-  /* Navbar Nav */
-  .navbar .nav-item-child {
-    color: #515769;
-    line-height: 1.4;
-    list-style: none;
-    display: inline-block;
-    padding: 12px 12px 12px 15px;
-  }
-  .navbar .nav-item-hover:after {
-    position: absolute;
-    top: 19px;
-  }
-}
-
-/* Media Queries below 767px */
-@media (max-width: 767px) {
-  /* Menu Container */
-  .header .menu-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .header .navbar > .container {
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .header .navbar > .container > .nav-collapse {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* Media Queries above 992px */
-@media (min-width: 992px) {
-  /* Navbar */
-  .header .navbar-nav-right {
-    float: right;
-  }
-}
-
-/* Page On Scroll */
-@media (min-width: 992px) {
-  .page-on-scroll .header .navbar {
-    background: #fff;
-    border-bottom-color: #f0f0f0;
-    transition-duration: 300ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  }
-  .page-on-scroll .header .logo-img-main {
-    display: none;
-    transition-duration: 400ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  }
-  .page-on-scroll .header .logo-img-active {
-    display: inline-block;
-    transition-duration: 400ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  }
-  .page-on-scroll .header .nav-item-child {
-    color: #515769;
-    transition-duration: 300ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  }
-}
-
 /*------------------------------------------------------------------
   	[Contact]
 ------------------------------------------------------------------*/
