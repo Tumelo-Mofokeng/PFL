@@ -44,11 +44,10 @@ p {
   margin-bottom: 15px;
 }
 
-em, li, li a {
+em, li a {
     font-size: 16px;
     font-weight: 500;
-    color: #fbfbfb;
-    list-style: none;
+    color: white;
     display: inline-block;
 }
 
